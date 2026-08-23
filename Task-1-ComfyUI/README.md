@@ -1,67 +1,44 @@
-# Task 1 — AI Image & Video Generation
+# Task 1 — ComfyUI Image and Video Generation
 
-## Overview
+This task was completed as part of the Advanced Internship Program on Generative AI conducted by iHUB-Data.
 
-As part of the Advanced Internship Program on Generative AI conducted by iHUB-Data, this task focused on exploring generative AI workflows for image and video generation.
+## Objective
 
-The objective was to understand the basic workflow of creating an AI-generated image and then using the generated image as the basis for creating a short AI-generated video.
+The objective of this task was to get familiar with ComfyUI and understand a basic image-to-video generation workflow by following the provided tutorial.
 
-## Workflow
+## Implementation
 
-The overall workflow followed was:
+The task was completed using **ComfyUI**, following the workflow demonstrated in the recommended Matt Wolfe YouTube tutorial provided as part of the internship.
 
-Text Prompt
-↓
-AI Image Generation
-↓
-Generated Image
-↓
-Image-to-Video Generation
-↓
-5-Second AI Video
+The workflow involved:
 
-## Task Implementation
+1. Setting up and using ComfyUI.
+2. Creating an image using the ComfyUI workflow.
+3. Using the generated image as the input for video generation.
+4. Generating a short 5-second video.
+5. Saving the final image and video outputs.
 
-### 1. Image Generation
+## Reference Tutorial
 
-A text prompt was used to generate an animated AI image.
+Matt Wolfe — ComfyUI Tutorial:
 
-The generated image was designed with a stylized animated appearance rather than a photorealistic style.
-
-### 2. Image-to-Video Generation
-
-The generated image was then used as the starting frame/reference for video generation.
-
-A short approximately 5-second animated video was created from the image.
+https://www.youtube.com/watch?v=xtwQWnIobTU
 
 ## Outputs
 
 ### Generated Image
 
-The final generated image is available in:
-
-`image-generation/`
+The final image generated through the ComfyUI workflow is available in the `image-generation/` folder.
 
 ### Generated Video
 
-The final generated video is available in:
+The final 5-second video generated through the ComfyUI workflow is available in the `video-generation/` folder.
 
-`video-generation/`
+## Tools Used
 
-## Key Concepts Explored
+- ComfyUI
+- ComfyUI workflow demonstrated in the provided tutorial
 
-- Generative AI
-- Text-to-Image Generation
-- Image-to-Video Generation
-- AI Animation
-- Prompt Engineering
-- Generative AI Workflows
+## Task Status
 
-## Reference
-
-This task was based on the generative AI workflow demonstrated in the tutorial provided as part of the internship task.
-
-## Internship
-
-**Program:** Advanced Internship Program on Generative AI  
-**Organization:** iHUB-Data
+**Completed**
