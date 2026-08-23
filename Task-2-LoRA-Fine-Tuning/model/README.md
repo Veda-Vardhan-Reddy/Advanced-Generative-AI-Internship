@@ -208,3 +208,61 @@ Carbon emissions can be estimated using the [Machine Learning Impact calculator]
 ### Framework versions
 
 - PEFT 0.20.0
+
+- # Fine-Tuned LoRA Adapter
+
+This directory contains the configuration and tokenizer files associated with the LoRA fine-tuned model developed for the Indian Legal Question-Answering task.
+
+## Base Model
+
+Qwen2.5-7B
+
+## Fine-Tuning Method
+
+Low-Rank Adaptation (LoRA)
+
+## Quantization
+
+4-bit quantization was used during fine-tuning to reduce GPU memory requirements.
+
+## LoRA Configuration
+
+| Parameter | Value |
+|---|---|
+| LoRA Rank | 16 |
+| LoRA Alpha | 16 |
+| LoRA Dropout | 0 |
+| Bias | None |
+| Target Modules | q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj |
+| Trainable Parameters | 40,370,176 |
+| Trainable Percentage | 0.53% |
+
+## Training Hardware
+
+NVIDIA Tesla T4 GPU with approximately 14.56 GB of GPU memory.
+
+## Model Files
+
+The repository contains:
+
+- `adapter_config.json` — LoRA adapter configuration
+- `tokenizer.json` — Tokenizer data
+- `tokenizer_config.json` — Tokenizer configuration
+
+The trained adapter weights (`adapter_model.safetensors`) are approximately 160 MB and are therefore not stored directly in this GitHub repository because they exceed GitHub's standard individual file-size limit.
+
+## Loading the Adapter
+
+The complete adapter weights can be loaded together with the base Qwen2.5-7B model using the PEFT/Unsloth workflow demonstrated in the accompanying notebook.
+
+Refer to:
+
+`../notebook/Indian_Legal_QA_LoRA_Fine_Tuning.ipynb`
+
+for the complete training and inference procedure.
+
+## Important Note
+
+This model was created as an educational demonstration of domain-specific fine-tuning using LoRA.
+
+It should not be used as a substitute for professional legal advice. Model-generated legal information should always be verified against authoritative legal sources.
